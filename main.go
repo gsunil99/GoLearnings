@@ -4,6 +4,12 @@ import (
 	"fmt"
 )
 
+type Student struct {
+	rollno int
+	name   string
+	marks  int
+}
+
 func main() {
 	// const welcome string = "Hello world"
 	// //welcome := "Hello world";
@@ -50,6 +56,9 @@ func main() {
 	add, sub := addSubtract(15, 10)
 	println(add)
 	println(sub)
+
+	var s1 = Student{101, "sunil", 55}
+	fmt.Println(s1)
 }
 func addSubtract(a, b int) (int, int) {
 	return a + b, a - b
